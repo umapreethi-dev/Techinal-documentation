@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Technical Documentation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <nav class="navbar">
+        <h1 style="padding: 20px 10px">JS Documentation</h1>
+        <ul style="padding: 0px">
+          <li class="sidenav"><a href="#intro">JavaScript - Home</a></li>
+          <li class="sidenav"><a href="#syntax">JavaScript - Syntax</a></li>
+          <li class="sidenav"><a href="#enabling">JavaScript - Enabling</a></li>
+          <li class="sidenav">
+            <a href="#placement">JavaScript - Placement</a>
+          </li>
+          <li class="sidenav">
+            <a href="#variables">JavaScript - Variables</a>
+          </li>
+          <li class="sidenav">
+            <a href="#operators">JavaScript - Operators</a>
+          </li>
+          <li class="sidenav"><a href="#ifelse">JavaScript - If..Else</a></li>
+          <li class="sidenav"><a href="#function">JavaScript - Functions</a></li>
+          <li class="sidenav"><a href="#event">JavaScript - Events</a></li>
+          <li class="sidenav"><a href="#cookies">JavaScript - Cookies</a></li>
+          <li class="sidenav"><a href="#objects">JavaScript - Objects</a></li>
+          <li class="sidenav"><a href="#number">JavaScript - Number</a></li>
+          <li class="sidenav"><a href="#array">JavaScript - Arrays</a></li>
+          <li class="sidenav"><a href="#string">JavaScript - Strings</a></li>
+        </ul>
+      </nav>
+      <main class="main">
+        <div id="intro">
+          <h2>JavaScript Introduction</h2>
+          <p>
+            JavaScript is a lightweight, interpreted programming language. It is
+            designed for creating network-centric applications. It is
+            complimentary to and integrated with Java. JavaScript is very easy
+            to implement because it is integrated with HTML. It is open and
+            cross-platform.
+          </p>
+          <h3>Why to Learn Javascript</h3>
+          <p>
+            Javascript is a MUST for students and working professionals to
+            become a great Software Engineer specially when they are working in
+            Web Development Domain. I will list down some of the key advantages
+            of learning Javascript:
+          </p>
+          <ul>
+            <li>
+              Javascript is the most popular programming language in the world
+              and that makes it a programmer’s great choice. Once you learnt
+              Javascript, it helps you developing great front-end as well as
+              back-end softwares using different Javascript based frameworks
+              like jQuery, Node.JS etc.
+            </li>
+            <li>
+              Javascript is everywhere, it comes installed on every modern web
+              browser and so to learn Javascript you really do not need any
+              special environment setup. For example Chrome, Mozilla Firefox ,
+              Safari and every browser you know as of today, supports
+              Javascript.
+            </li>
+            <li>
+              Javascript helps you create really beautiful and crazy fast
+              websites. You can develop your website with a console like look
+              and feel and give your users the best Graphical User Experience.
+            </li>
+            <li>
+              JavaScript usage has now extended to mobile app development,
+              desktop app development, and game development. This opens many
+              opportunities for you as Javascript Programmer.
+            </li>
+          </ul>
+        </div>
+        <div id="syntax">
+          <h2>JavaScript Syntax</h2>
+          <p>
+            JavaScript can be implemented using JavaScript statements that are
+            placed within the <b>&lt;script&gt;</b>...
+            <b>&lt;/script&gt;</b> HTML tags in a web page.
+          </p>
+          <p>
+            You can place the <b>&lt;script&gt;</b> tags, containing your
+            JavaScript, anywhere within your web page, but it is normally
+            recommended that you should keep it within the
+            <b>&lt;head&gt;</b> tags.
+          </p>
+          <p>
+            The <b>&lt;script&gt;</b> tag alerts the browser program to start
+            interpreting all the text between these tags as a script. <br />A
+            simple syntax of your JavaScript will appear as follows.
+          </p>
+          <pre>
+              <code>
+                &lt;script&gt;
+                   JavaScript code
+                &lt;/script&gt;
+                </code>
+            </pre>
+          <p>The script tag takes two important attributes −</p>
+          <ul>
+            <li>
+              <b>Language</b> − This attribute specifies what scripting language
+              you are using. Typically, its value will be javascript. Although
+              recent versions of HTML (and XHTML, its successor) have phased out
+              the use of this attribute.
+            </li>
+            <li>
+              <b>Type</b> − This attribute is what is now recommended to
+              indicate the scripting language in use and its value should be set
+              to "text/javascript".
+            </li>
+          </ul>
+        </div>
+        <p>So your JavaScript segment will look like −</p>
+        <pre>
+            <code>
+              &lt;script language = "javascript" type = "text/javascript"&gt;
+                 JavaScript code
+              &lt;/script&gt;
+              </code>
+          </pre>
+
+        <div id="enabling">
+          <h2>JavaScript Enabling</h2>
+          <p>
+            All the modern browsers come with built-in support for JavaScript.
+            Frequently, you may need to enable or disable this support manually.
+            This chapter explains the procedure of enabling and disabling
+            JavaScript support in your browsers: Internet Explorer, Firefox,
+            chrome, and Opera.
+          </p>
+          <h3>JavaScript in Internet Explorer</h3>
+          <p>
+            Here are simple steps to turn on or turn off JavaScript in your
+            Internet Explorer −
+          </p>
+          <ul>
+            <li>Follow <b>Tools → Internet Options</b> from the menu.</li>
+            <li>Select <b>Security</b> tab from the dialog box.</li>
+            <li>Click the <b>Custom Level</b> button.</li>
+            <li>Scroll down till you find <b>Scripting</b> option.</li>
+            <li>Select Enable radio button under <b>Active scripting.</b></li>
+            <li>Finally click OK and come out</li>
+          </ul>
+          <p>
+            To disable JavaScript support in your Internet Explorer, you need to
+            select <b>Disable</b> radio button under <b>Active scripting</b>.
+          </p>
+        </div>
+        <div id="placement">
+          <h2>JavaScript Placement</h2>
+          <p>
+            There is a flexibility given to include JavaScript code anywhere in
+            an HTML document.<br />
+            However the most preferred ways to include JavaScript in an HTML
+            file are as follows −
+          </p>
+
+          <ul>
+            <li>Script in &lt;head&gt;...&lt;/head&gt; section.</li>
+            <li>Script in &lt;body&gt;...&lt;/body&gt; section.</li>
+            <li>
+              Script in &lt;body&gt;...&lt;/body&gt; and
+              &lt;head&gt;...&lt;/head&gt; section.
+            </li>
+            <li>
+              Script in an external file and then include in
+              &lt;head&gt;...&lt;/head&gt; section.
+            </li>
+          </ul>
+          <p>
+            In the following section, we will see how we can place JavaScript in
+            an HTML file in different ways.
+          </p>
+          <h3>JavaScript in &lt;head&gt;...&lt;/head&gt; section</h3>
+          <p>
+            If you want to have a script run on some event, such as when a user
+            clicks somewhere, then you will place that script in the head as
+            follows −
+          </p>
+          <pre>
+              <code>
+                &lt;html&gt;
+                   &lt;head&gt;
+                      &lt;script language = "javascript" type = "text/javascript"&gt;
+                        JavaScript code
+                      &lt;/script&gt;
+                      &lt;body&gt;
+                      &lt;input type = "button" onclick = "sayHello()" value = "Say Hello" /&gt;
+                      &lt;/body&gt;
+                   &lt;/head&gt;
+                &lt;/html&gt;
+              </code>
+            </pre>
+        </div>
+        <div id="variables">
+          <h2>JavaScript Datatypes</h2>
+          <p>
+            One of the most fundamental characteristics of a programming
+            language is the set of data types it supports. These are the type of
+            values that can be represented and manipulated in a programming
+            language.
+          </p>
+
+          <p>JavaScript allows you to work with three primitive data types −</p>
+          <ul>
+            <li><b>Numbers</b>Numbers, eg. 123, 120.50 etc.</li>
+            <li>
+              <b>Strings of text</b>Strings of text e.g. "This text string" etc.
+            </li>
+            <li><b>Boolean</b> e.g. true or false.</li>
+          </ul>
+          <p>
+            JavaScript also defines two trivial data types, <b>null</b> and
+            <b>undefined</b>, each of which defines only a single value. In
+            addition to these primitive data types, JavaScript supports a
+            composite data type known as object. We will cover objects in detail
+            in a separate chapter.
+          </p>
+          <p>
+            <b>Note</b> − JavaScript does not make a distinction between integer
+            values and floating-point values. All numbers in JavaScript are
+            represented as floating-point values. JavaScript represents numbers
+            using the 64-bit floating-point format defined by the IEEE 754
+            standard.
+          </p>
+          <h3>JavaScript Variables</h3>
+          <p>
+            Like many other programming languages, JavaScript has variables.
+            Variables can be thought of as named containers. You can place data
+            into these containers and then refer to the data simply by naming
+            the container.
+          </p>
+
+          <p>
+            Before you use a variable in a JavaScript program, you must declare
+            it. Variables are declared with the var keyword as follows.
+          </p>
+          <pre>
+              <code>
+                 &lt;script language = "javascript" type = "text/javascript"&gt;
+                        var money;
+                        var name;
+                 &lt;/script&gt;
+                  </code>
+            </pre>
+          <p>
+            Storing a value in a variable is called variable initialization. You
+            can do variable initialization at the time of variable creation or
+            at a later point in time when you need that variable.
+          </p>
+          <p>
+            <b>Note</b> − Use the <b>var</b> keyword only for declaration or
+            initialization, once for the life of any variable name in a
+            document. You should not re-declare same variable twice.
+          </p>
+        </div>
+        <div id="operators">
+          <h2>JavaScript Operators</h2>
+          <p>
+            Let us take a simple expression 4 + 5 is equal to 9. Here 4 and 5
+            are called operands and ‘+’ is called the operator. JavaScript
+            supports the following types of operators.
+          </p>
+
+          <ul>
+            <li>Arithmetic Operators</li>
+            <li>Comparison Operators</li>
+            <li>Logical (or Relational) Operators</li>
+            <li>Assignment Operators</li>
+            <li>Conditional (or ternary) Operators</li>
+          </ul>
+          <h3>typeof Operator</h3>
+          <p>
+            The <b>typeof</b> operator is a unary operator that is placed before
+            its single operand, which can be of any type. Its value is a string
+            indicating the data type of the operand.
+          </p>
+          <p>
+            The <em>typeof</em> operator evaluates to "number", "string", or
+            "boolean" if its operand is a number, string, or boolean value and
+            returns true or false based on the evaluation.
+          </p>
+          <p>Here is a list of the return values for the typeof Operator.</p>
+          <table width="100%">
+            <tr>
+              <th>Type</th>
+              <th>String Returned by typeof</th>
+            </tr>
+            <tr>
+              <td>Number</td>
+              <td>"number</td>
+            </tr>
+            <tr>
+              <td>String</td>
+              <td>"string"</td>
+            </tr>
+            <tr>
+              <td>Boolean</td>
+              <td>"boolean</td>
+            </tr>
+            <tr>
+              <td>Object</td>
+              <td>"object"</td>
+            </tr>
+            <tr>
+              <td>Function</td>
+              <td>"function"</td>
+            </tr>
+          </table>
+        </div>
+        <div id="ifelse">
+          <h2>JavaScript If..Else</h2>
+          <p>
+            While writing a program, there may be a situation when you need to adopt one out of a given set of paths. In such cases, you need to use conditional statements that allow your program to make correct decisions and perform right actions.
+          </p>
+
+          <p>JavaScript supports conditional statements which are used to perform different actions based on different conditions. <br>JavaScript supports the following forms of if..else statement −</p>
+          <ul>
+            <li>if statement</li>
+            <li>
+              if...else statement
+            </li>
+            <li>if...else if... statement</li>
+          </ul>
+         
+          <h3>if statement</h3>
+          <p>
+            The if statement is the fundamental control statement that allows JavaScript to make decisions and execute statements conditionally.
+          </p>
+
+          <p>
+            The syntax for a basic if statement is as follows −
+          </p>
+          <pre>
+              <code>
+                if (expression) {
+                  Statement(s) to be executed if expression is true
+               }
+               </code>
+            </pre>
+          <p>
+            Here a JavaScript expression is evaluated. If the resulting value is true, the given statement(s) are executed. If the expression is false, then no statement would be not executed. Most of the times, you will use comparison operators while making decisions.
+          </p>
+          <h3>if...else statement</h3>
+          <p>
+            The 'if...else' statement is the next form of control statement that allows JavaScript to execute statements in a more controlled way.
+          </p>
+          <p>
+            The syntax for a basic if statement is as follows −
+          </p>
+          <pre>
+            <code>
+              if (expression) {
+                Statement(s) to be executed if expression is true
+             } else {
+                Statement(s) to be executed if expression is false
+             }
+             </code>
+          </pre>
+          <p>Here JavaScript expression is evaluated. If the resulting value is true, the given statement(s) in the ‘if’ block, are executed. If the expression is false, then the given statement(s) in the else block are executed.</p>
+        </div>
+        <div id="function">
+          <h2>JavaScript Function</h2>
+          <p>
+            A function is a group of reusable code which can be called anywhere in your program. This eliminates the need of writing the same code again and again. It helps programmers in writing modular codes. Functions allow a programmer to divide a big program into a number of small and manageable functions.
+          </p>
+
+          <p>Like any other advanced programming language, JavaScript also supports all the features necessary to write modular code using functions. You must have seen functions like <b>alert()</b> and <b>write()</b> in the earlier chapters. We were using these functions again and again, but they had been written in core JavaScript only once.</p>
+          <p>JavaScript allows us to write our own functions as well. This section explains how to write your own functions in JavaScript.</p>
+          <h3>Function Definition</h3>
+          <p>Before we use a function, we need to define it. The most common way to define a function in JavaScript is by using the function keyword, followed by a unique function name, a list of parameters (that might be empty), and a statement block surrounded by curly braces.</p>
+          <p>Syntax:</p>
+          <pre>
+            <code>
+                   &lt;script language = "javascript" type = "text/javascript"&gt;
+                          function functionname(parameter-list) {
+                            statements
+                        }
+                    &lt;/script&gt;
+            </code>
+          </pre>
+        </div>
+        <div id="event">
+          <h2>JavaScript Events</h2>
+          <p>
+            JavaScript's interaction with HTML is handled through events that occur when the user or the browser manipulates a page.
+          </p>
+
+          <p>When the page loads, it is called an event. When the user clicks a button, that click too is an event. Other examples include events like pressing any key, closing a window, resizing a window, etc.</p>
+          <p>Developers can use these events to execute JavaScript coded responses, which cause buttons to close windows, messages to be displayed to users, data to be validated, and virtually any other type of response imaginable.</p>
+          <p>Events are a part of the Document Object Model (DOM) Level 3 and every HTML element contains a set of events which can trigger JavaScript Code.</p>
+          <h3>onclick Event Type</h3>
+          <p>This is the most frequently used event type which occurs when a user clicks the left button of his mouse. You can put your validation, warning etc., against this event type.</p>
+          <p>Example:</p>
+          <pre>
+            <code>
+              &lt;html&gt;
+                 &lt;head&gt;
+                    &lt;script language = "javascript" type = "text/javascript"&gt;
+                          function sayHello() {
+                            alert("Hello World")
+                        }
+                    &lt;/script&gt;
+                    &lt;body&gt;
+                    &lt;p&gt;Click the following button and see result&lt;/p&gt;
+                    &lt;input type = "button" onclick = "sayHello()" value = "Say Hello" /&gt;
+                    &lt;/body&gt;
+                 &lt;/head&gt;
+              &lt;/html&gt;
+            </code>
+          </pre>
+        </div>
+        <div id="cookies">
+          <h2>JavaScript Cookies</h2>
+          <p>
+            Web Browsers and Servers use HTTP protocol to communicate and HTTP is a stateless protocol. But for a commercial website, it is required to maintain session information among different pages. For example, one user registration ends after completing many pages. But how to maintain users' session information across all the web pages.
+          </p>
+          <p>In many situations, using cookies is the most efficient method of remembering and tracking preferences, purchases, commissions, and other information required for better visitor experience or site statistics.</p>
+          <h3>How It Works ?</h3>
+          <p>
+            Your server sends some data to the visitor's browser in the form of a cookie. The browser may accept the cookie. If it does, it is stored as a plain text record on the visitor's hard drive. Now, when the visitor arrives at another page on your site, the browser sends the same cookie to the server for retrieval. Once retrieved, your server knows/remembers what was stored earlier.
+          </p>
+          <p>Cookies are a plain text data record of 5 variable-length fields −</p>
+          <ul>
+            <li>
+              <b>Expires</b> − The date the cookie will expire. If this is blank, the cookie will expire when the visitor quits the browser.
+            </li>
+            <li>
+              <b>Domain</b> − The domain name of your site.
+            </li>
+            <li>
+              <b>Path</b> − The path to the directory or web page that set the cookie. This may be blank if you want to retrieve the cookie from any directory or page.
+            </li>
+            <li>
+              <b>Secure </b>− If this field contains the word "secure", then the cookie may only be retrieved with a secure server. If this field is blank, no such restriction exists.
+            </li>
+            <li>
+              <b>Name=Value</b> − Cookies are set and retrieved in the form of key-value pairs
+            </li>
+          </ul>
+          <p>Cookies were originally designed for CGI programming. The data contained in a cookie is automatically transmitted between the web browser and the web server, so CGI scripts on the server can read and write cookie values that are stored on the client.</p>
+        </div>
+        <div id="objects">
+          <h2>JavaScript Objects</h2>
+          <p>
+            JavaScript is an Object Oriented Programming (OOP) language. A programming language can be called object-oriented if it provides four basic capabilities to developers −
+          </p>
+          <ul>
+            <li>
+              <b>Encapsulation</b> − the capability to store related information, whether data or methods, together in an object.
+            </li>
+            <li>
+              <b>Aggregation</b> − the capability to store one object inside another object.
+            </li>
+            <li>
+              <b>Path</b> − The path to the directory or web page that set the cookie. This may be blank if you want to retrieve the cookie from any directory or page.
+            </li>
+            <li>
+              <b>Inheritance </b>− the capability of a class to rely upon another class (or number of classes) for some of its properties and methods.
+            </li>
+            <li>
+              <b>Polymorphism </b> − the capability to write one function or method that works in a variety of different ways.
+            </li>
+          </ul>
+          <p>Objects are composed of attributes. If an attribute contains a function, it is considered to be a method of the object, otherwise the attribute is considered a property.</p>
+          <h3>Object Properties</h3>
+          <p>Object properties can be any of the three primitive data types, or any of the abstract data types, such as another object. Object properties are usually variables that are used internally in the object's methods, but can also be globally visible variables that are used throughout the page.</p>
+          <p>The syntax for adding a property to an object is −</p>
+          <pre>
+            <code>
+              objectName.objectProperty = propertyValue;
+            </code>
+          </pre>
+        </div>
+        <div id="number">
+          <h2>JavaScript Number</h2>
+          <p>
+            The Number object represents numerical date, either integers or floating-point numbers. In general, you do not need to worry about Number objects because the browser automatically converts number literals to instances of the number class.
+          </p>
+          <h3>Syntax</h3>
+          <p>The syntax for creating a number object is as follows −</p>
+          <pre>
+            <code>
+              var val = new Number(number);
+            </code>
+          </pre>
+          <p>In the place of number, if you provide any non-number argument, then the argument cannot be converted into a number, it returns <b>NaN</b> (Not-a-Number).</p>
+        </div>
+        <div id="array">
+          <h2>JavaScript Arrays</h2>
+          <p>
+            The Array object lets you store multiple values in a single variable. It stores a fixed-size sequential collection of elements of the same type. An array is used to store a collection of data, but it is often more useful to think of an array as a collection of variables of the same type.
+          </p>
+          <h3>Syntax</h3>
+          <p>Use the following syntax to create an Array object −</p>
+          <pre>
+            <code>
+              var fruits = new Array( "apple", "orange", "mango" );
+            </code>
+          </pre>
+          <p>The Array parameter is a list of strings or integers. When you specify a single numeric parameter with the Array constructor, you specify the initial length of the array. The maximum length allowed for an array is 4,294,967,295.</p>
+          <p>You can create array by simply assigning values as follows −</p>
+          <pre>
+            <code>
+              var fruits = [ "apple", "orange", "mango" ];
+            </code>
+          </pre>
+        </div>
+        <div id="string">
+          <h2>JavaScript Strings</h2>
+          <p>
+            The String object lets you work with a series of characters; it wraps Javascript's string primitive data type with a number of helper methods.
+          </p>
+          <h3>Syntax</h3>
+          <p>Use the following syntax to create an String object −</p>
+          <pre>
+            <code>
+              var val = new String(string);
+            </code>
+          </pre>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
